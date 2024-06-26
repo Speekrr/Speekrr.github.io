@@ -159,10 +159,8 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "c15f4b1f1925d352",
+  "active": "dcc5524218b2e2a6",
   "lastOpenFiles": [
-    "index.md",
-    "README.md",
     "docs/lib/search-index.json",
     "docs/lib/metadata.json",
     "docs/lib/styles/obsidian.css",
@@ -173,9 +171,12 @@
     "docs/lib/scripts/minisearch.js",
     "docs/lib/scripts/pixi.js",
     "docs/lib/scripts/tinycolor.js",
+    "docs/lib/scripts/graph-render-worker.js",
     "docs/lib/media/favicon.png",
-    "docs/lib/media/874d8b8e340f75575caa.svg",
     "docs/lib/media/3d6c1bdc4d87cde4de67.svg",
-    "test.md"
+    "docs/lib/media/874d8b8e340f75575caa.svg",
+    "README.md",
+    "test.md",
+    "index.md"
   ]
 }
