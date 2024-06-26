@@ -2,7 +2,7 @@
   "settingsVersion": "1.8.01",
   "makeOfflineCompatible": false,
   "inlineAssets": false,
-  "includePluginCSS": "",
+  "includePluginCSS": "obsidian-kanban\nmake-md\nobsidian-tasks-plugin\nconvert-url-to-iframe\nhugo-codeblock-highlight\nobsidian-advanced-codeblock\nobsidian-rich-links\nobsidian-audio-player",
   "includeSvelteCSS": true,
   "titleProperty": "title",
   "customHeadContentPath": "",
