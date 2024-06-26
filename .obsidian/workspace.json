@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "test.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "test.md"
               }
             }
           }
@@ -159,8 +159,10 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "dcc5524218b2e2a6",
+  "active": "c15f4b1f1925d352",
   "lastOpenFiles": [
+    "index.md",
+    "README.md",
     "docs/lib/search-index.json",
     "docs/lib/metadata.json",
     "docs/lib/styles/obsidian.css",
@@ -171,12 +173,9 @@
     "docs/lib/scripts/minisearch.js",
     "docs/lib/scripts/pixi.js",
     "docs/lib/scripts/tinycolor.js",
-    "docs/lib/scripts/graph-render-worker.js",
     "docs/lib/media/favicon.png",
     "docs/lib/media/874d8b8e340f75575caa.svg",
     "docs/lib/media/3d6c1bdc4d87cde4de67.svg",
-    "Test.md",
-    "Main.md",
-    "README.md"
+    "test.md"
   ]
 }
