@@ -1,1 +1,1 @@
-# Speekrr.github.io
+# Obsidian template for using github.io
