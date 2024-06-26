@@ -1,5 +1,4 @@
 [
-  "webpage-html-export",
   "obsidian-kanban",
   "make-md",
   "obsidian-tasks-plugin",
@@ -8,7 +7,6 @@
   "hugo-codeblock-highlight",
   "obsidian-advanced-codeblock",
   "obsidian-rich-links",
-  "obsidian-enhancing-export",
   "obsidian-audio-player",
-  "obsidian42-brat"
+  "webpage-html-export"
 ]

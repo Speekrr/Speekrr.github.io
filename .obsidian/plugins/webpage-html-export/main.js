@@ -63839,6 +63839,19 @@ body
 	--color-fade-speed: 0.2s;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, text, pre, span {
+    font-family: 'SUITE-Regular',serif!important;
+}
+
 /*#endregion */
 
 /*#region Tree */
@@ -65353,19 +65366,19 @@ var Tree = class {
     let treeContainerEl = container.createDiv();
     let treeHeaderEl = container.createDiv();
     let sectionHeaderEl = container.createEl("span");
-    let collapseAllEl = container.createEl("button");
+    //let collapseAllEl = container.createEl("button");
     let treeScrollAreaEl = container.createDiv();
     treeContainerEl.classList.add("tree-container", "mod-root", "nav-folder", "tree-item", this.class);
     treeHeaderEl.classList.add("tree-header");
     sectionHeaderEl.classList.add("sidebar-section-header");
-    collapseAllEl.classList.add("clickable-icon", "collapse-tree-button");
-    collapseAllEl.setAttribute("aria-label", "Collapse All");
-    collapseAllEl.innerHTML = "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></svg>";
+    //collapseAllEl.classList.add("clickable-icon", "collapse-tree-button");
+    //collapseAllEl.setAttribute("aria-label", "Collapse All");
+    //collapseAllEl.innerHTML = "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></svg>";
     treeScrollAreaEl.classList.add("tree-scroll-area", "tree-item-children", "nav-folder-children");
     let invisFirst = treeScrollAreaEl.createDiv("tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed");
     invisFirst.style.display = "none";
-    if (this.generateWithItemsClosed)
-      collapseAllEl.classList.add("is-collapsed");
+    //if (this.generateWithItemsClosed)
+    //  collapseAllEl.classList.add("is-collapsed");
     if (this.showNestingIndicator)
       treeContainerEl.classList.add("mod-nav-indicator");
     treeContainerEl.setAttribute("data-depth", "0");
@@ -65373,7 +65386,7 @@ var Tree = class {
     treeContainerEl.appendChild(treeHeaderEl);
     treeContainerEl.appendChild(treeScrollAreaEl);
     treeHeaderEl.appendChild(sectionHeaderEl);
-    treeHeaderEl.appendChild(collapseAllEl);
+    //treeHeaderEl.appendChild(collapseAllEl);
     await this.generateTree(treeScrollAreaEl);
   }
   sortAlphabetically(reverse = false) {
@@ -66372,7 +66385,7 @@ var Webpage = class extends Downloadable {
         HTMLGeneration.createThemeToggle(layout.leftBar);
       }
       if (this.exportOptions.addSearch) {
-        let searchbarHTML = `<div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."style="border-radius:10px; border-width: 0px;"><div class="search-input-clear-button" aria-label="Clear search"></div></div>`;
+        let searchbarHTML = `<div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..." style="border-radius:10px; border-width: 0px;"><div class="search-input-clear-button" aria-label="Clear search"></div></div>`;
         leftSidebar.createDiv().outerHTML = searchbarHTML;
       }
       if (this.website && this.exportOptions.addFileNavigation) {
@@ -66457,21 +66470,21 @@ var Webpage = class extends Downloadable {
     let leftContent = this.document.createElement("div");
     let leftTopbar = this.document.createElement("div");
     let leftTopbarContent = this.document.createElement("div");
-    //let leftCollapseIcon = this.document.createElement("div");
+    let leftCollapseIcon = this.document.createElement("div");
     let documentContainer = this.document.createElement("div");
     let rightSidebar = this.document.createElement("div");
     let rightSidebarHandle = this.document.createElement("div");
     let rightContent = this.document.createElement("div");
     let rightTopbar = this.document.createElement("div");
     let rightTopbarContent = this.document.createElement("div");
-    //let rightCollapseIcon = this.document.createElement("div");
+    let rightCollapseIcon = this.document.createElement("div");
     pageContainer.setAttribute("class", "webpage-container workspace");
     leftSidebar.setAttribute("class", "sidebar-left sidebar");
     leftSidebarHandle.setAttribute("class", "sidebar-handle");
     leftContent.setAttribute("class", "sidebar-content");
     leftTopbar.setAttribute("class", "sidebar-topbar");
     leftTopbarContent.setAttribute("class", "topbar-content");
-    //leftCollapseIcon.setAttribute("class", "clickable-icon sidebar-collapse-icon");
+    leftCollapseIcon.setAttribute("class", "clickable-icon sidebar-collapse-icon");
     documentContainer.setAttribute("class", "document-container markdown-reading-view");
     if (this.exportOptions.includeJS)
       documentContainer.classList.add("hide");
@@ -66480,7 +66493,7 @@ var Webpage = class extends Downloadable {
     rightContent.setAttribute("class", "sidebar-content");
     rightTopbar.setAttribute("class", "sidebar-topbar");
     rightTopbarContent.setAttribute("class", "topbar-content");
-    //rightCollapseIcon.setAttribute("class", "clickable-icon sidebar-collapse-icon");
+    rightCollapseIcon.setAttribute("class", "clickable-icon sidebar-collapse-icon");
     pageContainer.appendChild(leftSidebar);
     pageContainer.appendChild(documentContainer);
     pageContainer.appendChild(rightSidebar);
@@ -66489,16 +66502,16 @@ var Webpage = class extends Downloadable {
     leftSidebar.appendChild(leftTopbar);
     leftSidebar.appendChild(leftContent);
     leftTopbar.appendChild(leftTopbarContent);
-    //leftTopbar.appendChild(leftCollapseIcon);
-    //leftCollapseIcon.innerHTML = collapseSidebarIcon;
+    leftTopbar.appendChild(leftCollapseIcon);
+    leftCollapseIcon.innerHTML = collapseSidebarIcon;
     documentContainer.innerHTML += middleContent instanceof HTMLElement ? middleContent.outerHTML : middleContent.toString();
     if (this.exportOptions.allowResizeSidebars && this.exportOptions.includeJS)
       rightSidebar.appendChild(rightSidebarHandle);
     rightSidebar.appendChild(rightTopbar);
     rightSidebar.appendChild(rightContent);
     rightTopbar.appendChild(rightTopbarContent);
-    //rightTopbar.appendChild(rightCollapseIcon);
-    //rightCollapseIcon.innerHTML = collapseSidebarIcon;
+    rightTopbar.appendChild(rightCollapseIcon);
+    rightCollapseIcon.innerHTML = collapseSidebarIcon;
     let leftSidebarScript = leftSidebar.createEl("script");
     let rightSidebarScript = rightSidebar.createEl("script");
     leftSidebarScript.setAttribute("defer", "");
