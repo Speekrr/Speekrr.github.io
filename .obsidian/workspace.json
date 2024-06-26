@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f1eca37490aa1959",
+        "id": "4a53a2dcc76747b9",
         "type": "tabs",
         "children": [
           {
-            "id": "dcc5524218b2e2a6",
+            "id": "e85638fcd2d3f4e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "876c72afd6062bb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -76,8 +64,17 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "b8ff0ac96e5efc52",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -97,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test.md"
+                "file": "index.md"
               }
             }
           }
@@ -156,11 +153,18 @@
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-kanban:새 보드 만들기": false,
+      "obsidian-rich-links:Rich Links": false
     }
   },
-  "active": "dcc5524218b2e2a6",
+  "active": "e85638fcd2d3f4e4",
   "lastOpenFiles": [
+    "index.md",
+    "README.md",
+    "test.md",
+    "Tags",
+    "2024-06-26.md",
     "docs/lib/search-index.json",
     "docs/lib/metadata.json",
     "docs/lib/styles/obsidian.css",
@@ -170,13 +174,8 @@
     "docs/lib/scripts/graph-data.js",
     "docs/lib/scripts/minisearch.js",
     "docs/lib/scripts/pixi.js",
-    "docs/lib/scripts/tinycolor.js",
-    "docs/lib/scripts/graph-render-worker.js",
     "docs/lib/media/favicon.png",
     "docs/lib/media/3d6c1bdc4d87cde4de67.svg",
-    "docs/lib/media/874d8b8e340f75575caa.svg",
-    "README.md",
-    "test.md",
-    "index.md"
+    "docs/lib/media/874d8b8e340f75575caa.svg"
   ]
 }
